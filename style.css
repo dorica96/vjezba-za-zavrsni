@@ -1,0 +1,72 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.flex-container {
+    width: 200px;
+    border: solid black 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.unaprijedPostavljeno {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: circle;
+}
+
+.unaprijedPostavljeno li {
+    margin: 10px 0;
+    
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .unaprijedPostavljeno {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .unaprijedPostavljeno li {
+        margin: 5px 0;
+    }
+}
+
+/* Stilovi za računala (ekrani širine veće od 768px isključivo) */
+@media (min-width: 769px) {
+    .flex-container {
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .unaprijedPostavljeno {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .unaprijedPostavljeno li {
+        margin: 10px 0;
+    }
+}
+
+.favorite {
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+    <title>Recenziranje glazbe</title>
+</head>
+<body>
+    <form class="flex-container" action="" method="post" id="albumForm">
+        <label for="naziv">Unesite naziv albuma*</label> <br>
+        <input id="naziv" name="nazivalbuma" type="text" required> <br>
+
+        <label for="ocjena">Unesite ocjenu brojem 1-10*</label> <br>
+        <input id="ocjena" name="ocjenalabuma" type="number" required min="0" max="10" step="1"> <br>
+
+        <input id="submitBtn" type="button" value="Klikni ovjde">
+    </form>
+
+    <ul class="unaprijedPostavljeno" id="albumList">
+        <li>Album 1, Ocjena 4, Datum i vrijeme pohrane: 29.06. 13.30h 
+            <button class="buttonF">označi me kao favorita</button>
+            <button class="buttonR">izbriši me s ove liste</button>
+        </li>
+        <li>Album 2, Ocjena 7, Datum i vrijeme pohrane: 29.06. 14.00h 
+            <button class="buttonF">označi me kao favorita</button>
+            <button class="buttonR">izbriši me s ove liste</button>
+        </li>
+    </ul>
+</body>
+</html>

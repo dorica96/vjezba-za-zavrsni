@@ -1,0 +1,17 @@
+function hello() {
+    console.log("Pozdrav svijete!");
+}
+
+// Poziv funkcije
+hello();
+
+function paranBroj(broj) {
+if (broj % 2 === 0) {
+console.log(broj + 'je paran broj');
+}
+else {
+console.log(broj + 'nije paran broj');
+}
+}
+
+paranBroj(10);

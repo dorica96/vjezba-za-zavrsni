@@ -1,0 +1,15 @@
+/* Definicija mixin-a */
+@mixin styleText($font-family, $font-size, $background-color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    background-color: $background-color;
+}
+
+/* Primjer korištenja mixin-a */
+h1 {
+    @include styleText('Arial, sans-serif', 24px, #f0f0f0);
+}
+
+p {
+    @include styleText('Verdana, sans-serif', 16px, #ffffff);
+}
